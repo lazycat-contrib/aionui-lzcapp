@@ -1,0 +1,16 @@
+package: community.lazycat.app.aionui
+version: 2.1.2
+name: AionUi
+description: "AI-powered collaboration interface with built-in Agent engine"
+min_os_version: 1.5.0
+homepage: https://github.com/iOfficeAI/AionUi
+author: iOfficeAI
+
+permissions:
+  required:
+    - net.internet
+
+locales:
+  zh:
+    name: "AionUi"
+    description: "内置 Agent 引擎的 AI 协作界面，开箱即用"

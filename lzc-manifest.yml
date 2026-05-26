@@ -1,0 +1,19 @@
+application:
+  subdomain: aionui
+  upstreams:
+    - location: /
+      backend: http://server:3000/
+  public_path:
+    - /
+
+services:
+  server:
+    image: docker.1ms.run/czyt/aionui:2.1.2
+    restart: unless-stopped
+    binds:
+      - /lzcapp/var/data:/data
+
+usage: |
+  First-time setup: open the app and check logs for the randomly generated admin password.
+  Log in with username "admin" and the password found in the container logs.
+  After the first successful login, subsequent visits will auto-fill credentials.
