@@ -12,7 +12,7 @@ jobs:
   lazycat:
     uses: ca-x/lazycat-github-action/.github/workflows/lazycat.yml@v1
     with:
-      operation: auto
+      operation: build
       config: .github/lazycat-action.yml
       versioned-release-asset: true
     secrets:
